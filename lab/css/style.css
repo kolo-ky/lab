@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  font-family: "Roboto", "Arial", sans-serif;
+  line-height: 22px;
+  font-weight: 400;
+  color: #323232;
+  font-size: 16px;
+  background-color: #edeef0;
+}
+
+a {
+  text-decoration: none;
+  color: #323232;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
