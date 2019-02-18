@@ -1,0 +1,46 @@
+.todo-footer {
+  padding: 40px 20px;
+  color: #323232;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/*
+  форма добавления задачи
+*/
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-form__input {
+  border: none;
+  font-size: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.todo-form__input:hover,
+.todo-form__input:focus {
+  border-bottom: 1px solid #09ab74
+}
+
+.todo-form__input--title {
+  width: 400px;
+}
+
+.todo-form__input--date {
+  width: 200px;
+}
+
+.todo-form__button {
+  padding: 8px 15px;
+  color: #ffffff;
+  font-size: 16px;
+  border: none;
+  background-color: #09ab74;
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+}
