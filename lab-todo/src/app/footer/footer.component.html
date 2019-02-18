@@ -1,0 +1,17 @@
+<footer class="todo-footer" *ngIf="showComponent">
+  <form class="todo-form" [formGroup]="form" (submit)="addTask()">
+    <input
+      type="text"
+      class="todo-form__input todo-form__input--title"
+      placeholder="Название: изучить Angular"
+      formControlName="title"
+    >
+    <input
+      type="text"
+      class="todo-form__input todo-form__input--date"
+      placeholder="Срок: 12.02.2019"
+      formControlName="date"
+    >
+    <button type="submit" class="todo-form__button">Добавить</button>
+  </form>
+</footer>

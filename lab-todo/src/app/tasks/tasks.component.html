@@ -1,0 +1,9 @@
+<ul class="task-list" cdkDropList (cdkDropListDropped)="dropped($event)">
+  <li *ngFor="let task of tasks" [class]="getTaskComponent(task)"  cdkDrag>
+    <span class="task-list__item-label" (click)="onClickTask($event, task.id)">{{task.title}}</span>
+    <span class="task-list__item-date">{{task.date}}</span>
+
+    <button class="task-list__item-edit" [routerLink]="['task', 'edit', task.id]"></button>
+    <button class="task-list__item-view" [routerLink]="['task', 'view', task.id]"></button>
+  </li>
+</ul>
