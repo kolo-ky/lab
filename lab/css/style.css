@@ -3,19 +3,246 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
   line-height: 22px;
   font-weight: 400;
-  color: #323232;
+  color: #ffffff;
   font-size: 16px;
   background-color: #edeef0;
 }
 
-a {
-  text-decoration: none;
-  color: #323232;
+/*
+  приложение
+*/
+
+.todo {
+  margin: 100px auto;
+  width: 800px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.app-wrapper {
+/*
+  хедер
+*/
+
+.todo-header {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  background-color: #774bbe;
 }
+
+.todo-header__title {
+  font-size: 40px;
+  letter-spacing: 3px;
+}
+
+/*
+  список задач
+*/
+
+.task-list {
+  padding: 0;
+  margin: 0;
+  color: #323232;
+  background-color: #ffffff;
+  list-style: none;
+}
+
+.task-list__item {
+  position: relative;
+  display: flex;
+  padding: 20px 20px 20px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.task-list__item-date {
+  margin-left: auto;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.task-list__item-edit {
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/edit.svg");
+  background-size: 20px 20px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.task-list__item:hover {
+  background-color: #edeef0;
+}
+
+.task-list__item-label {
+  display: flex;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.task-list__item::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: aqua;
+  content: '';
+}
+
+.task-list__item--complete::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #09ab74;
+  content: '';
+}
+
+.task-list__item--deadline::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: #d02828;
+  content: '';
+}
+
+.task-list__item--edit::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 5px;
+  height: 100%;
+  background-color: transparent;
+  content: '';
+}
+
+.task-list__item .task-list__item-label::before {
+  display: block;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/check-box-empty.svg");
+  background-size: 20px 20px;
+  content: '';
+}
+
+.task-list__item--complete .task-list__item-label::before {
+  display: block;
+  margin-right: 5px;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/check-box.svg");
+  background-size: 20px 20px;
+  content: '';
+}
+
+/*
+  футер приложения
+*/
+
+.todo-footer {
+  padding: 40px 20px;
+  color: #323232;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+/*
+  форма добавления задачи
+*/
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-form__input {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.todo-form__input:hover,
+.todo-form__input:focus {
+  border-bottom: 1px solid #09ab74
+}
+
+.todo-form__input--title {
+  width: 400px;
+}
+
+.todo-form__input--date {
+  width: 200px;
+}
+
+.todo-form__button {
+  padding: 8px 15px;
+  color: #ffffff;
+  border: none;
+  background-color: #09ab74;
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/*
+  форма редактирования задачи
+*/
+
+.edit-form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.edit-form__input {
+  width: 400px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: transparent;
+  outline: none;
+}
+
+.edit-form__input:hover,
+.edit-form__input:focus {
+  border-bottom: 1px solid #09ab74
+}
+
+.edit-form__button {
+  padding: 8px 15px;
+  color: #ffffff;
+  border: none;
+  background-color: #09ab74;
+  cursor: pointer;
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

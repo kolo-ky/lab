@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Точка</title>
+</head>
+<body>
+  <section class="header">
+    <nav class="main-navigation">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__list-item">
+          <a class="main-navigation__list-link" href="index.html">События</a>
+        </li>
+      </ul>
+
+      <ul class="main-navigation__list">
+        <li class="main-navigation__list-item">
+          <a class="main-navigation__list-link" href="newevent.html">Добавить событие</a>
+        </li>
+      </ul>
+    </nav>
+  </section>
+
+  <section class="container">
+    <h1 class="container__title">Добавление события</h1>
+    <form action="/" class="form">
+      <p class="form__item">
+        <label for="eventtype" class="form__item-title">Тип события</label>
+        <select name="eventtype" id="eventtype" class="form__item-select">
+          <option value="1">Транзакция</option>
+          <option value="2">Новость</option>
+        </select>
+      </p>
+
+      <p class="form__item">
+        <label for="from" class="form__item-title">От кого</label>
+        <input type="text" name="from" id="from" class="form__item-input">
+      </p>
+
+      <p class="form__item">
+        <label for="amount" class="form__item-title">Сумма</label>
+        <input type="text" name="amount" id="amount" class="form__item-input">
+      </p>
+
+      <p class="form__item">
+        <label for="date" class="form__item-title">Дата</label>
+        <input type="text" name="date" id="date" class="form__item-input">
+      </p>
+
+      <p class="form__item">
+        <label for="type" class="form__item-title">Тип события</label>
+        <select name="type" id="type" class="form__item-select">
+          <option value="1">Приход</option>
+          <option value="2">Расход</option>
+        </select>
+      </p>
+
+      <p class="form__item">
+        <input type="submit" class="form__item-button">
+      </p>
+    </form>
+
+    <form action="/" class="form">
+      <p class="form__item">
+        <label for="new-form" class="form__item-title">Заголовок</label>
+        <input type="text" name="from" id="new-form" class="form__item-input">
+      </p>
+
+      <p class="form__item">
+        <label for="new-description" class="form__item-title">Текст новости</label>
+        <textarea name="new-description" id="new-description" class="form__item-area"></textarea>
+      </p>
+
+      <p class="form__item">
+        <input type="submit" class="form__item-button">
+      </p>
+    </form>
+  </section>
+</body>
+</html>

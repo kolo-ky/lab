@@ -1,0 +1,4 @@
+<svg id="checkbox-checked" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <image width="20" height="20" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAN0lEQVQ4jWNkYGT8z0BFwERNw0CABcb4+fUTRQaxc/OBaaq7cNTAUQNHDRw1kD4GDvISm4GBAQB2AgUrK1IOWAAAAABJRU5ErkJggg=="/>
+  <image id="cross" x="4" y="4" width="12" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAd0lEQVQokZWRwQmAMAxFH4pdRFDULRygW7qAw3nwoBJJoEJT6b+05L9PmwRVACZ8jUCbwjtwAjETieptFlq0cGdCBps3eEZ0atmnBbj0dOE0lMJy/8BNYTK/qvpSVdM1Y52laIs7gNUZhMDCCPuqA/pCk7KwAPAAUqg2Ik/wtlwAAAAASUVORK5CYII="/>
+</svg>

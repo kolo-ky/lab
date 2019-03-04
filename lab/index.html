@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>СЛБ-ЛАБ</title>
+</head>
+<body>
+    <section class="todo">
+        <header class="todo-header">
+            <h1 class="todo-header__title">TODO</h1>
+        </header>
+
+        <ul class="task-list">
+            <li class="task-list__item task-list__item--complete">
+                <span class="task-list__item-label">Изучить тестовое</span>
+                <span class="task-list__item-date">14.02.2019</span>
+
+                <button class="task-list__item-edit"></button>
+            </li>
+
+            <li class="task-list__item">
+                <span class="task-list__item-label">Изучить Angular</span>
+                <span class="task-list__item-date">22.02.2019</span>
+
+                <button class="task-list__item-edit"></button>
+            </li>
+
+            <li class="task-list__item task-list__item--deadline">
+                <span class="task-list__item-label">Написать тестовое</span>
+                <span class="task-list__item-date">19.02.2019</span>
+
+                <button class="task-list__item-edit"></button>
+            </li>
+
+        </ul>
+
+        <footer class="todo-footer">
+            <form class="todo-form">
+                <input type="text" class="todo-form__input todo-form__input--title" placeholder="Введите название">
+                <input type="text" class="todo-form__input todo-form__input--date" placeholder="Задайте срок">
+                <button type="submit" class="todo-form__button">Добавить</button>
+            </form>
+        </footer>
+    </section>
+</body>
+</html>
